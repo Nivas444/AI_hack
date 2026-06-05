@@ -61,7 +61,7 @@ export function useGemini(): UseGeminiReturn {
   });
   const [role, setRole] = useState<ProjectRole>('student');
   const [persona, setPersona] = useState<PersonaType>('skeptic');
-  const [model, setModelInternal] = useState<string>(() => localStorage.getItem('vivaforce_model') || 'gemini-2.5-pro');
+  const [model, setModelInternal] = useState<string>(() => localStorage.getItem('vivaforce_model') || 'gemini-2.5-flash');
 
   const setModel = (m: string) => {
     setModelInternal(m);
